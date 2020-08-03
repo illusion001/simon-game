@@ -48,7 +48,10 @@ $(".btn").on("click", function(event){
 
 $("#level-title").on("click", function(){
     if (level == 0){
-        nextSequence();
+        setTimeout(function(){
+            nextSequence();");
+        }, 1000);
+        
     }  
 })
 
@@ -68,7 +71,7 @@ function checkAnswer(currentLevel){
     if (currentLevel+1 == level){
         setTimeout(function(){
             nextSequence();
-        },1000); 
+        },1500); 
         userClickedPattern = [];
 
     } 
