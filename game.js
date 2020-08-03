@@ -49,7 +49,7 @@ $(".btn").on("click", function(event){
 $("#level-title").on("click", function(){
     if (level == 0){
         setTimeout(function(){
-            nextSequence();");
+            nextSequence();
         }, 1000);
         
     }  
@@ -65,7 +65,7 @@ function checkAnswer(currentLevel){
             $("body").removeClass("game-over");
         }, 200);
 
-        $("#level-title").text("Game Over, Click to Restart");
+        $("#level-title").text("Game Over, Click Here to Restart");
         startOver();
     }
     if (currentLevel+1 == level){
